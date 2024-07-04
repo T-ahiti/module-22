@@ -4,3 +4,13 @@ const shoppingCart = [
     {name:'pant', price:3700},
     {name:'belt', price:600}
 ]
+
+function totalCost(products){
+    for(let i = 0; i<products.length; i++){
+        const product = products [i]
+        console.log(product)
+    }
+}
+
+const expense = totalCost(shoppingCart)
+console.log(expense)
