@@ -14,7 +14,14 @@ function ticketPrice(ticketQuantity){
     const price = ticketQuantity * first100Rate
      return price
    }
+   else if( ticketQuantity <= 200){
+    const first100Price = 100 * first100Rate
+    const restTicketQuantity = ticketQuantity - 100
+    const restTicketPrice = restTicketQuantity * second100Rate;
+    const totalPrice = first100Price + restTicketPrice
+    return totalPrice
+   }
 }
 
-const  price = ticketPrice(1)
+const  price = ticketPrice(180)
 console.log(price)
