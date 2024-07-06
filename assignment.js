@@ -1,7 +1,14 @@
 
 function cubeNumber(number){
-    const cubicNumber = number * number * number;
+    let num = Math.abs(number)
+    const cubicNumber = num * num * num;
+    if(typeof number !== '3'){
+       console.log('please enter a number')
+    }
     return cubicNumber;
 }
 
-cubeNumber(3)
+const youCubic = cubeNumber(-9)
+// console.log(youCubic)
+
+
