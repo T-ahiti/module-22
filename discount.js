@@ -21,7 +21,17 @@ function ticketPrice(ticketQuantity){
     const totalPrice = first100Price + restTicketPrice
     return totalPrice
    }
+   else{
+   const first100Price = 100 * first100Rate
+   const first200Price = 100 * second100Rate
+   const remainedTicketQuantity = ticketQuantity - 200
+   const remainedPrice = remainedTicketQuantity * restRate
+   const totalPrice2 = first100Price + first200Price + remainedPrice
+   return totalPrice2
+
+   }
 }
 
-const  price = ticketPrice(180)
+const  price = ticketPrice(480)
 console.log(price)
+
