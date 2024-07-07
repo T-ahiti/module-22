@@ -13,8 +13,8 @@ const youCubic = cubeNumber(-9)
 
 
 function matchFinder(string1, string2){
-  if ( typeof string1 !== 'string' && string2 !== 'string'){
-    console.log('please enter a string')
+  if ( typeof string1 !== 'string' || typeof string2 !== 'string'){
+    return 'please enter a string';
   }
   else if( string1.includes(string2) || string2.includes(string1) ){
     return true
